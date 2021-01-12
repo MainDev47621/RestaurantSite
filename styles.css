@@ -14,7 +14,6 @@ body {
 .top-index {
     background: url(./images/meat1.webp);
     background-size: cover;
-    --button-padding: 10px 30px;
     height: 100vh;
 }
 
@@ -72,13 +71,49 @@ main h2 {
 }
 
 main button {
-    background: #fff;
     border: none;
-    font-size: 14px;
-    padding: var(--button-padding);
     border-radius: 30px;
+}
+
+.standard-btn {
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 30px;
     text-transform: uppercase;
 }
+
+.contact-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-index h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.contact-index p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.contact-index button {
+    margin-top: 20px;
+}
+
+.contact-index button:hover {
+    background: hsl(0, 0%, 20%);
+    color: #fff;
+}
+
+
+
+/* Footer and social Media icons */
 
 footer {
     background: #333;
