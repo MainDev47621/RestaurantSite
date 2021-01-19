@@ -116,10 +116,45 @@ main button {
 /* Footer and social Media icons */
 
 footer {
-    background: #333;
+    background: #ff359b;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+footer .bg-square {
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+}
+
+footer .bg-square-1 {
+    background: #00d2ff;
+    width: 50%;
+    left: 10%;
+}
+
+footer .bg-square-2 {
+    background: #fffd87;
+    width: 25%;
+    right: 10%;
+}
+
+footer .glass {
+    backdrop-filter: blur(200px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+footer .line {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 3;
 }
 
 .social-media {
@@ -127,10 +162,27 @@ footer {
     justify-content: center;
     align-items: center;
     list-style: none;
+    z-index: 4;
 }
 
 .sm-link {
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10%;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 80px 20px;
+    width: 50px;
+    height: 50px;
+    transform: translateY(0);
+    transition: 0.2s;
+}
+
+.sm-link:hover {
+    transform: translateY(-10px);
+    transition: 0.2s;
 }
 
 .sm-link a i {
@@ -143,6 +195,6 @@ footer {
     font-size: 28px;
 }
 
-.sm-link:hover a i {
+/* .sm-link:hover a i {
     color: hsl(0, 0%, 80%);
-}
+} */
