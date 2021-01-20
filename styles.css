@@ -202,12 +202,56 @@ footer .line {
 .top-menu {
     background: url(images/meat2.png);
     background-size: cover;
-    
     width: 100%;
     height: 400px;
+    /* position: relative; */
+}
+
+.main-menu {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main-menu h1 {
+    text-shadow: 5px 5px 40px #000;
     color: #fff;
+    font-size: 144px;
+    letter-spacing: 15px;
     text-transform: uppercase;
+}
+
+.menu {
+    --menu-item-height: 70px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(300px, 25%));
+    /* grid-template-rows: var(--menu-item-height); */
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.menu-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    /* grid-row-end: auto; */
+}
+
+.menu-category h4, .menu-category p {
+    height: var(--menu-item-height);
+}
+
+.menu-category h4 {
+    margin-top: 20px;
+}
+
+.menu-cat-2 {
+    grid-row-end: span 4;
 }
