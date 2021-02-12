@@ -9,6 +9,8 @@
 .main-index h2 {
     color: #fff;
     font-size: 72px;
+    margin-bottom: 10px;
+    text-align: center;
     text-shadow: 5px 5px 20px #000;
     text-transform: uppercase;
 }
@@ -16,6 +18,12 @@
 .main-index button {
     border: none;
     border-radius: 30px;
+    transition: 0.2s;
+}
+
+.main-index button:hover {
+    background: lightgray;
+    transition: 0.2s;
 }
 
 .standard-btn {
