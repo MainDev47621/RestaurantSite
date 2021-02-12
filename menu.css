@@ -51,6 +51,14 @@
     padding: 30px;
 }
 
+.menu-col h4 {
+    margin-bottom: 30px;
+}
+
+.menu-col .menu-item {
+    margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 992px) {
     .menu {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
