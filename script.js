@@ -1,6 +1,5 @@
 $(document).ready(() => {
     $('#open-icon').on('click', () => {
-        // $('.nav-links').css('display', 'flex');
         $(".nav-links").slideDown({
             start: function () {
               $(this).css({
