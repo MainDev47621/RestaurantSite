@@ -1,0 +1,30 @@
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.contact-section .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.contact-section .contact-item h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section .contact-item {
+        padding: 20px 0;
+    }
+}

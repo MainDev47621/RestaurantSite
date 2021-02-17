@@ -17,7 +17,6 @@
 
 .main-index button {
     border: none;
-    border-radius: 30px;
     transition: 0.2s;
 }
 
@@ -28,10 +27,11 @@
 
 .standard-btn {
     background: #fff;
+    border-radius: 30px;
     cursor: pointer;
     font-size: 14px;
-    padding: 10px 30px;
     text-transform: uppercase;
+    padding: 10px 30px;
 }
 
 .contact-index {
@@ -53,11 +53,18 @@
     margin-top: 20px;
 }
 
-.contact-index button {
+.contact-index a {
+    border: 3px solid #000;
     margin-top: 20px;
 }
 
-.contact-index button:hover {
+.contact-index a:hover {
     background: hsl(0, 0%, 20%);
     color: #fff;
+}
+
+.contact-index a {
+    color: #000;
+    padding: 10px 30px;
+    text-decoration: none;
 }
