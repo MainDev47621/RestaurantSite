@@ -8,7 +8,7 @@
 }
 
 .top-index {
-    background: url(./images/meat1.webp);
+    background: url(../images/meat1.webp);
     background-size: cover;
     height: 100vh;
 }
@@ -68,49 +68,11 @@ header #close-icon {
     display: none;
 }
 
-@media only screen and (min-width: 768px) {
-    header .nav-links {
-        display: flex;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    header .nav-links {
-        backdrop-filter: blur(5px);
-        background: rgba(0, 0, 0, 0.7);
-        display: none;
-        font-size: 2em;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        z-index: 10;
-    }
-    
-    header .nav-links li {
-        padding: 20px;
-    }
-
-    header #open-icon {
-        display: block;
-    }
-    
-    header #close-icon {
-        display: none;
-    }
-}
-
 
 /* Header banner for all pages except home */
 
 .top {
-    background: url(images/meat2.png);
+    background: url(../images/meat2.png);
     background-size: cover;
     width: 100%;
     height: 300px;
@@ -124,14 +86,15 @@ header #close-icon {
 
 .main h1 {
     color: #fff;
-    font-size: 5rem;
-    letter-spacing: 15px;
+    font-size: 4rem;
+    letter-spacing: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 5px 5px 40px #000;
     text-transform: uppercase;
+    text-align: center;
 }
 
 
@@ -149,7 +112,7 @@ footer {
 footer .bg-square {
     position: absolute;
     bottom: 0;
-    height: 90%;
+    height: 75%;
 }
 
 footer .bg-square-1 {
@@ -221,3 +184,46 @@ footer .line {
 /* .sm-link:hover a i {
     color: hsl(0, 0%, 80%);
 } */
+
+
+@media only screen and (min-width: 768px) {
+    header .nav-links {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 881px) {
+    header .nav-links {
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        font-size: 2em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10;
+    }
+    
+    header .nav-links li {
+        padding: 20px;
+    }
+
+    header #open-icon {
+        display: block;
+    }
+    
+    header #close-icon {
+        display: none;
+    }
+
+    .sm-link {
+        margin: 80px 15px;
+    }
+}
